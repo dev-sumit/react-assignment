@@ -33,14 +33,14 @@ function Login() {
     const { errors, isSubmitting } = formState;
 
     function onSubmit({ username, password }) {
-        return dispatch(authActions.login({ username, password }));
+        return dispatch(authActions.login({ email: username, password }));
     }
 
     return (
         <div className="col-md-6 offset-md-3 mt-5">
             <div className="alert alert-info">
-                Username: test<br />
-                Password: test
+                Username: fake@example.com<br />
+                Password: password1
             </div>
             <div className="card">
                 <h4 className="card-header">Login</h4>
