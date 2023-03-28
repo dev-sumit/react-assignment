@@ -31,7 +31,6 @@ function createReducers() {
     };
 
     function selectCard(state, action) {
-		console.log({ selectedCard: action.payload });
         state.selectedCard = action.payload;
     }
 }
